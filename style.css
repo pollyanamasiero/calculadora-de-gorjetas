@@ -1,50 +1,50 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: lightcoral;
-    --secondary-color: DimGrey;
-    --tertiary-color: Gainsboro;
+    --primary-color: lightCoral;
+    --secondary-color: dimgrey;
+    --tertiary-color: gainsboro;
 }
 
 body {
-    background-color: var(--primary-color);
-    font-size: 15px;
     font-family: Lato, sans-serif;
+    background-color: var(--primary-color);
+    font-size: 18px;
 }
 
 #container {
     height: 525px;
-    width: 360px;
-    margin: 100px auto;
+    width: 370px;
     background-color: #f7f7f7;
-    box-shadow: 5px 5px 5px var(--tertiary-color);
     border-radius: 20px;
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px var(--tertiary-color);
 }
 
 .title {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
     padding: 20px;
+    background-color: var(--tertiary-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 18px;
     font-weight: normal;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     text-align: center;
 }
 
 .tipsForm {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
 }
 
 .formInput {
     background: white;
+    padding: 6px;
     width: 40px;
-    padding: 5px 5px 8px 8px;
 }
 
-.formInput:focus {
+.formInput:focus, .formSelect:focus {
     border: 3px solid var(--primary-color);
     outline: none;
 }
@@ -52,25 +52,18 @@ body {
 .formSelect {
     width: 180px;
     padding: 5px;
-    font-size: 12px;
-}
-
-.formSelect:focus {
-    border: 3px solid var(--primary-color);
-    outline: none;
 }
 
 .formSubmit {
+    background-color: var(--primary-color);
     text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
     font-weight: bold;
     display: block;
-    margin: 30px auto;
-    background: var(--primary-color);
-    border-radius: 5px;
     width: 200px;
     height: 50px;
-    font-size: 17px;
-    color: white;
+    margin: 30px 45px;
 }
 
 #totalTip {

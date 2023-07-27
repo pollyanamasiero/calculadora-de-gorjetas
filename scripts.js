@@ -5,11 +5,11 @@ function calculateTip(event) {
     let numOfPeople = document.getElementById('people').value;
 
     if(bill == '' | serviceQual == 0) {
-        alert("Por favor, preenche os valores")
+        alert("Por favor, preencha os valores")
         return;
     }
 
-    if(numOfPeople == '' | numOfPeople <= 1) {
+    if(numOfPeople == '' | numOfPeople <=1) {
         numOfPeople = 1;
         document.getElementById('each').style.display = "none"
     } else {
